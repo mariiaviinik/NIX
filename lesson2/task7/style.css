@@ -1,0 +1,13 @@
+div :first-child{
+    color: red;
+}
+div :only-of-type{
+    background-color: blue;
+}
+div :last-child{
+    color: blue;
+}
+div :only-child
+{
+    color: white;
+}
