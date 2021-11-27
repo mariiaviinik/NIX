@@ -1,0 +1,10 @@
+ul{
+    list-style-type: none;
+}
+.hidden{
+    display: none;
+    background-color: red;
+}
+.show:hover .hidden {
+    display: table;
+}

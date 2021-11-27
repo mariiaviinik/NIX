@@ -1,0 +1,12 @@
+div{
+    border: 1px solid black;
+    display:inline-block;
+    width: 80px
+
+}
+.odd{
+    float: right;
+}
+.even{
+    float: left;
+}

@@ -1,0 +1,16 @@
+div{
+    display: inline-block;
+    color: white;
+}
+div:first-child{
+    width: 30%;
+}
+div:last-child{
+    width: 70%;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}

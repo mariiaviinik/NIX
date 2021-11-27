@@ -1,0 +1,17 @@
+.inline-block{
+    display: inline-block;
+    width: 30%;
+}
+.red{
+    background-color: red;
+}
+.white{
+    background-color: white;
+    width: 40%;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
