@@ -1,0 +1,29 @@
+table{
+    border-collapse: collapse;
+    width: 200px;
+    height: 200px;
+}
+td{
+    background-color: red;
+}
+td:first-child{
+    background-color: blue;
+}
+.blue{
+    background-color: blue;
+}
+.circle{
+    border-radius: 50%;
+}
+.round-right-up-corner{
+    border-top-right-radius: 50% ;
+}
+.round-left-up-corner{
+    border-top-left-radius: 50% ;
+}
+.round-right-low-corner{
+    border-bottom-right-radius: 50% ;
+}
+.round-left-low-corner{
+    border-bottom-left-radius: 50% ;
+}

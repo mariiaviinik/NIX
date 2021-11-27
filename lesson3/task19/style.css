@@ -1,0 +1,14 @@
+div{
+    margin: 50px 50px;
+    width: 220px;
+    height: 120px;
+    background-image: url(w3c.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    /* background-origin: padding-box; */
+    box-shadow: -30px -30px 10px red, 
+    30px 30px 10px blue,
+    30px -30px 10px green inset,
+    -30px 30px 10px black inset;
+}

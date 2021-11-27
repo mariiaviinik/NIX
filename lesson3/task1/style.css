@@ -1,0 +1,11 @@
+*{
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 1em;
+    background-image: url(bg.jpg);
+    /* color: #EF5CD1; */
+    /* color: pink; */
+    /* color: rgb(239, 92, 209); */
+    /* color: hsl(312, 97%, 69%); */
+    color: hsla(312, 97%, 69%, 0.8);
+}
