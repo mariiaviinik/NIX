@@ -1,0 +1,22 @@
+.flex-container{
+    display: flex;
+}
+[class|= "item"]{
+    flex-basis: 100px;
+}
+@media(device-width: 400px){
+    .item-2, .item-4{
+        flex-shrink: 2;
+    }
+}
+@media(devixe-width: 500px){
+    [class|= "item"]{
+        flex-basis: 150px;
+    }
+}
+@media(device-width: 600px){
+    .item-3, .item-4{
+        flex-grow: 2;
+    }
+}
+
