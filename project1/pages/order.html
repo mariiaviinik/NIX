@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <div class="basket-header flex black-bg">
+        <div class="logo">
+            <span><i><b>her clothes</b></i></span>
+        </div>
+    </div>
+    <div class="wrapper-basket"> 
+        <div class="basket-form-holder">
+            <div class="basket-header flex gray-border-btm">
+                <div class="login-sign">Ordering</div>
+            </div>
+            <div class="m-t-15">
+                <div class="basket-container flex gray-border-btm">
+                    <div class="basket-section main">
+                        <form name="delivery-form">
+                            <div class="form-section column flex">
+                                <h3>Delivery</h3>
+                                <p class="m-t-15">
+                                   Delivery cost 20$
+                                   Free delivery when paying online
+                                   for orders from 100$.
+                                </p>
+                                <input list="post-list" placeholder="Delivery service">
+                                <datalist id="post-list">
+                                    <option value="item-1">item</option>
+                                    <option value="item-2">item</option>
+                                    <option value="item-3">item</option>
+                                </datalist>
+                                <input type="text" name="city" id="city" placeholder="City">
+                                <input type="text" name="index" id="index" placeholder="Home index">
+                            </div>
+                            <div class="form-section column m-t-15">
+                                <h3>Payment</h3>
+                                <label>
+                                    <input type="radio" name="payment" id="card">Card
+                                </label>
+                                <label>
+                                    <input type="radio" name="payment" id="cash">Cash
+                                </label>
+                            </div>
+                            <div class="form-section column flex m-t-15">
+                                <h3>Recipient</h3>
+                                <input type="text" name="name" id="name" placeholder="Your name">
+                                <input type="text" name="second-name" id="second-name" placeholder="Second name">
+                                <input type="tel" name="tel" id="tel" placeholder="Phone number">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                                <input type="submit" value="Checkout" class="blue">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="basket-section gray-border-left">
+                        <div class="gray-border-btm m-t-15 m-b-15">
+                            <h3>Order Summary</h3>
+                            <div class="flex price">
+                                <span>Delivery</span>
+                                <span class="m-l-auto">##</span>
+                            </div>
+                            <div class="flex price">
+                                <span><b>Total</b></span>
+                                <span class="m-l-auto"><b>####</b></span>
+                            </div>
+                            <p class="m-t-15 m-b-15">
+                                If you pay 100% of the cost (order from 100$) <br>
+                                by bank card on the site, regardless <br>
+                                of the chosen method of delivery, <br>
+                                delivery will be free!
+                            </p>
+                        </div>
+                        <div class="gray-border-btm m-t-15">
+                            <div class="m-b-15">
+                                <input style="width: 49%; height: 50px;" type="text" name="promocode" id="promocode" placeholder="Promo Code">
+                                <input style="width: 49%; height: 50px;" type="button" value="Confirm" class="blue">
+                            </div>
+                        </div>
+                        <div class="m-t-15 m-b-15">
+                            <h3>In Basket</h3>
+                            <div class="flex m-t-15">
+                                <img class="basket-photo m-b-15" src="../img/outfit.jpg" alt="">
+                                <div class="m-l-15">
+                                    <p>Item</p> <br>
+                                    <p>Size: 36</p> 
+                                    <p>1 pc</p>
+                                    <p><b>100$</b></p>
+                                </div>
+                            </div>
+                            <p class="m-t-15">
+                                <a href="#">Edit</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conditions m-t-15 flex">
+                <div class="condition-item flex">
+                    <img src="https://img.icons8.com/material-outlined/30/000000/circular-arrows--v1.png"/>
+                    <div>
+                        <p>Fitting & Return</p>
+                        <p>Return of goods within 14 days</p>
+                    </div>
+                </div>
+                <div class="condition-item flex">
+                    <img src="https://img.icons8.com/external-tulpahn-basic-outline-tulpahn/30/000000/external-box-product-packaging-tulpahn-basic-outline-tulpahn.png"/>
+                    <div>
+                        <p>Free delivery</p>
+                        <p>When paying by card for orders from 100$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
