@@ -1,0 +1,82 @@
+li{
+    list-style-type: none;
+}
+body{
+    background-color: rgb(54, 52, 52);
+    color: white;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.main-container{
+    margin: 10px;
+    width: 600px;
+}
+
+.game-container{
+    justify-content: space-between;
+}
+.quiz{
+    width: 500px;
+}
+.answer-container{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.answer{
+    width: 47%;
+    margin: 15px 0 0 0;
+    cursor: pointer;
+}
+
+.help-buttons{
+    margin: 0 20px 0 0;
+}
+.help-buttons *{
+    margin: 5px 0;
+    cursor: pointer;
+}
+.help-buttons *:focus,
+.answer:hover{
+    background-color: orange;
+}
+.timer{
+    font-size: large;
+    text-align: center;
+}
+
+.level-list{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.level{
+    margin: 5px;
+}
+
+#end{
+    width: 200px;
+    text-align: center;
+}
+
+#start{
+    padding: 10px 100px;
+}
+
+#timer{
+    text-align: end;
+}
+
+#result{
+    margin-bottom: 10px;
+    font-size: large;
+}
+.colum{
+    display: flex;
+    flex-direction: column;
+}
+.invisible{
+    opacity: 0;
+}

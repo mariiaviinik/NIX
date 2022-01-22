@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Who wants to be a millionaire?</title>
+	<link rel="stylesheet" href="millionaire.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="flex">
+    <button id="start" class="circle-border orange" onclick="startGame()">START</button>
+
+    <div id="end" class="colum hidden">
+        <span id="result"></span>
+        <button id="again" class="p-3-10 circle-border orange" onclick="startGame()">TRY AGAIN</button>
+    </div>
+
+	<div class="main-container colum hidden">
+        
+        <div class="game-container flex">
+            <div class="help-buttons colum">
+                <span id="timer">40</span>
+                <button class="call-fiend p-3-10 circle-border">Call a friend</button>
+                <button class="hint p-3-10 circle-border">50 : 50</button>
+            </div>
+
+            <div class="quiz">
+                <div class="question-container p-3-10 circle-border orange"></div>
+                <ul class="answer-container flex">
+                    <li class="answer p-3-10 circle-border" value="1">1</li>
+                    <li class="answer p-3-10 circle-border" value="2">2</li>
+                    <li class="answer p-3-10 circle-border" value="3">3</li>
+                    <li class="answer p-3-10 circle-border" value="4">4</li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="level-list p-3-10 flex circle-border">
+            <li class="level p-3-10 circle-border orange">100</li>
+            <li class="level p-3-10 circle-border">200</li>
+            <li class="level p-3-10 circle-border">300</li>
+            <li class="level p-3-10 circle-border">500</li>
+            <li class="level p-3-10 circle-border">1000</li>
+            <li class="level p-3-10 circle-border">2000</li>
+            <li class="level p-3-10 circle-border">4000</li>
+            <li class="level p-3-10 circle-border">8000</li>
+            <li class="level p-3-10 circle-border">16 000</li>
+            <li class="level p-3-10 circle-border">32 000</li>
+            <li class="level p-3-10 circle-border">64 000</li>
+            <li class="level p-3-10 circle-border">125 000</li>
+            <li class="level p-3-10 circle-border">250 000</li>
+            <li class="level p-3-10 circle-border">500 000</li>
+            <li class="level p-3-10 circle-border">1 000 000</li>
+        </ul>
+    </div>
+</body>
+<script src="js.js"></script>
+</html>

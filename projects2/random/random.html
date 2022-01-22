@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <link rel="stylesheet" href="random.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="flex">
+    <div class="holder colum">
+        <div class="flex">
+            <div class="flex res-div">
+                <div id="res-num" class="large-text"></div>
+            </div>
+            <div id="options" class="colum">
+                <div class="row colum">
+                    <label for="amount">Amount of numbers:</label>
+                        <input type="text" class="white-bottom-line" id="amount">
+                </div>
+                <div class="row colum">
+                    <label for="min">Min number:</label>
+                        <input type="text" class="white-bottom-line" id="min">
+                </div>
+                <div class="row colum">
+                    <label for="max">Max number:</label>
+                        <input type="text" class="white-bottom-line" id="max">
+                </div>
+            </div>
+        </div>
+        <button id="button" class="orange">GENERATE RANDOM UNIQUE NUMBER</button>        
+        <div id="result"></div>
+    </div>
+</body>
+<script src="js.js"></script>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="flex">
+    <div class="holder">
+        <div id="options">
+            <div class="option">Usual</div>
+            <div class="option bottom-line">Expanded</div>
+        </div>
+        <div class="calculator">
+            <div id="output">
+                <input type="text" id="current" readonly>
+            </div>
+            <table id="table">
+                <tr>  
+                    <td colspan="3">
+                        <input type="button" id="clear" value="C">
+                    </td>
+                    <td class="hidden">
+                        <input type="button" data-num class="gray" value="pi">
+                    </td>
+                    <td class="hidden">
+                        <input type="button" data-num class="gray" value="e">
+                    </td>
+                    <td>
+                        <input type="button" data-operation  class="orange" value="/">
+                    </td> 
+                </tr>
+                <tr>  
+                    <td>
+                        <input type="button" data-num value="1">
+                    </td>
+                    <td>
+                        <input type="button" data-num value="2">
+                    </td>
+                    <td>
+                        <input type="button" data-num value="3">
+                    </td>
+                    <td class="hidden">
+                        <input type="button" data-func  class="gray" value="sin">
+                    </td>
+                    <td class="hidden">
+                        <input type="button" data-func  class="gray" value="cos">
+                    </td>
+                    <td>                
+                        <input type="button"data-operation  class="orange" value="*">
+                    </td> 
+                </tr>
+                <tr>   
+                    <td>
+                        <input type="button" data-num value="4">
+                    </td>
+                    <td>
+                        <input type="button" data-num value="5">
+                    </td>
+                    <td>
+                        <input type="button" data-num value="6">
+                    </td>
+                    <td class="hidden">
+                        <input type="button" data-func  class="gray" value="tg">
+                    </td>
+                    <td class="hidden">
+                        <input type="button" data-func  class="gray" value="ctg">
+                    </td>
+                    <td>                
+                        <input type="button" data-operation  class="orange" value="-">
+                    </td> 
+                </tr>
+                <tr>  
+                    <td>
+                        <input type="button" data-num value="7">
+                    </td>
+                    <td>
+                        <input type="button" data-num value="8">
+                    </td>
+                    <td>
+                        <input type="button" data-num value="9">
+                    </td>
+                    <td class="hidden">
+                        <input type="button" data-func  class="gray" value="√">
+                    </td>
+                    <td class="hidden">
+                        <input type="button" data-operation  class="gray" value="^">
+                    </td>
+                    <td>                
+                        <input type="button" data-operation class="orange" value="+">
+                    </td>  
+                </tr>
+                <tr>   
+                    <td colspan="2">
+                        <input type="button" data-num value="0">
+                    </td>
+                    <td>
+                        <input type="button" data-num value=".">
+                    </td>
+                    <td colspan="2" class="hidden">
+                        <input type="button" data-func class="gray" value="Rand">
+                    </td>
+                    <td>
+                        <input type="button" id="equal" class="orange" value="=">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="medium">
+
+    </div>
+</body>
+<script src="js.js"></script>
+</html>
