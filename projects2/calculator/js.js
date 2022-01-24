@@ -31,11 +31,17 @@ class Calculator {
     }
     
     chooseOperation(operation) {
-        if (this.currentOperand === "") return ;
-        
+        if (this.currentOperand === "") {
+            if(this.operation != null && this.previousOperand !== ""){
+                this.operation = operation;
+            } else{
+                return ;
+            }
+        }
+
         if (this.previousOperand !== "") {
             this.compute();
-        }         
+        }     
 
         this.operation = operation;
     }
@@ -111,7 +117,8 @@ class Calculator {
         }
         if (this.operation != null) {
             if(this.previousOperand){
-                this.currentOperandTextElement.value = this.currentOperand;
+                this.currentOperandTextElement.value =
+                 `${this.previousOperand} ${this.operation} ${this.currentOperand}`;
             } else{
                 this.previousOperand = this.currentOperand;
                 this.currentOperand = "";
@@ -121,10 +128,6 @@ class Calculator {
         } else {
             this.currentOperandTextElement.value = this.currentOperand;
         }
-        // if (this.previousOperand && this.currentOperand === "") {
-        //     this.currentOperandTextElement.value =
-        //           `${this.previousOperand} ${this.operation}`;
-        // }
     }
 }
 
@@ -141,7 +144,6 @@ operationBtns.forEach(button => {
     button.addEventListener("click", () => {
       calculator.chooseOperation(button.value);
       calculator.updateDisplay();
-      button.classList.add("pressed");
     })
 })
 
