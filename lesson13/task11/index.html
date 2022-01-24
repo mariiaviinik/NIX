@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="genres">
+        <option value="rock">Рок</option>
+        <option value="blues" selected>Блюз</option>
+    </select>
+    <p></p>
+    <script>
+        let select = document.querySelector("select")
+        let p = document.querySelector("p")
+
+        select.innerHTML += `<option value="classic">Классика</option>`;
+        select.selectedIndex = "2";
+        
+        select.addEventListener("change", function() {
+            let selectedIndex = select.selectedIndex;
+
+            p.innerHTML = "value: " + select[selectedIndex].value + ", selectedIndex: " + selectedIndex;
+        });
+        
+    </script>
+</body>
+</html>
