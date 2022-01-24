@@ -64,13 +64,16 @@ class Calculator {
             case "/":
                 computation = prev / current;
                 break;
+            case "%":
+                computation = prev * current / 100;
+                break;
             case "^":
                 computation = prev ** current;
                 break;
             default:
                 return this.operation = operation; 
         }
-        this.currentOperand = computation;
+        this.currentOperand = Math.round(computation*100)/100
         this.operation = undefined;
         this.previousOperand = "";
     }
