@@ -59,3 +59,7 @@ td{
 .bottom-line{
     border-bottom: 1px solid white;
 }
+.pressed{
+    background-color: white;
+    color: orange;
+}

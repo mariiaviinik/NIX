@@ -32,6 +32,9 @@ input:focus {
     outline:none;
     border-bottom: 1px solid orange;
 }
+#unique{
+    margin-left: 10px;
+}
 #button{
     width: 100%;
     border: none;
